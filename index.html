@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2oosos — Photography</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:wght@200;300;400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- GRAIN OVERLAY -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-left">
+      <a href="#hero" class="nav-logo">
+        <!-- GANTI: <img src="assets/logo.png" alt="2oosos" class="logo-img" /> -->
+        <span class="logo-wordmark">2oosos</span>
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#presets">Presets</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="https://www.instagram.com/2oosos" target="_blank" class="nav-ig" aria-label="Instagram">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mob-menu" id="mobMenu">
+    <nav>
+      <a href="#gallery"  class="mob-link">Gallery</a>
+      <a href="#presets"  class="mob-link">Presets</a>
+      <a href="#about"    class="mob-link">About</a>
+      <a href="#contact"  class="mob-link">Contact</a>
+    </nav>
+    <a href="https://www.instagram.com/2oosos" target="_blank" class="mob-ig">@2oosos</a>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero">
+    <div class="hero-left">
+      <div class="hero-issue">
+        <span>Vol. 01</span>
+        <span class="dot">·</span>
+        <span>Photography</span>
+        <span class="dot">·</span>
+        <span>Indonesia</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line reveal" style="--d:0s">Every</span>
+        <span class="title-line italic reveal" style="--d:0.1s">frame</span>
+        <span class="title-line reveal" style="--d:0.2s">becomes</span>
+        <span class="title-line reveal" style="--d:0.3s">the past.</span>
+      </h1>
+      <p class="hero-sub reveal" style="--d:0.45s">
+        Capture the moment — tell its story in the future.
+      </p>
+      <a href="https://www.instagram.com/2oosos" target="_blank" class="hero-btn reveal" style="--d:0.55s">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Follow @2oosos
+      </a>
+    </div>
+    <div class="hero-right reveal" style="--d:0.2s">
+      <div class="hero-img-frame">
+         <img src="assets/logo/logo.jpg" alt="">
+        <!-- <div class="hero-img-placeholder">
+          <span>hero photo</span>
+          <small>4:5 · portrait</small>
+        </div> -->
+        <div class="hero-frame-deco"></div>
+      </div>
+      <div class="hero-caption">
+        <span class="caption-line"></span>
+        <span>2oosos — 2025</span>
+      </div>
+    </div>
+    <div class="hero-scroll reveal" style="--d:0.7s">
+      <div class="scroll-track"><div class="scroll-thumb"></div></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section id="gallery">
+    <div class="gallery-head">
+      <div class="gallery-head-left reveal">
+        <span class="eyebrow">Portfolio</span>
+        <h2>Selected<br/><em>Works</em></h2>
+      </div>
+      <p class="gallery-head-desc reveal" style="--d:0.1s">
+        A curated collection of moments<br/>frozen in light and time.
+      </p>
+    </div>
+
+    <div class="gallery-grid">
+      <!-- GANTI src dengan foto kamu (4:5) -->
+      <div class="g-item g-item--tall reveal"   style="--d:0.0s" data-index="0"><img src="assets/photos/photo (1).jpg" alt="Photo 1" loading="lazy" onerror="this.parentElement.classList.add('g-empty')"/><div class="g-hover"><span>01</span></div></div>
+      <div class="g-item reveal"                style="--d:0.08s" data-index="1"><img src="assets/photos/photo (2).jpg" alt="Photo 2" loading="lazy" onerror="this.parentElement.classList.add('g-empty')"/><div class="g-hover"><span>02</span></div></div>
+      <div class="g-item reveal"                style="--d:0.16s" data-index="2"><img src="assets/photos/photo (3).jpg" alt="Photo 3" loading="lazy" onerror="this.parentElement.classList.add('g-empty')"/><div class="g-hover"><span>03</span></div></div>
+      <div class="g-item g-item--wide reveal"   style="--d:0.05s" data-index="3"><img src="assets/photos/photo (4).jpeg" alt="Photo 4" loading="lazy" onerror="this.parentElement.classList.add('g-empty')"/><div class="g-hover"><span>04</span></div></div>
+      <div class="g-item reveal"                style="--d:0.12s" data-index="4"><img src="assets/photos/photo (5).jpg" alt="Photo 5" loading="lazy" onerror="this.parentElement.classList.add('g-empty')"/><div class="g-hover"><span>05</span></div></div>
+      <div class="g-item reveal"                style="--d:0.18s" data-index="5"><img src="assets/photos/photo (6).jpg" alt="Photo 6" loading="lazy" onerror="this.parentElement.classList.add('g-empty')"/><div class="g-hover"><span>06</span></div></div>
+      <div class="g-item reveal"                style="--d:0.18s" data-index="6"><img src="assets/photos/photo (7).jpg" alt="Photo 7" loading="lazy" onerror="this.parentElement.classList.add('g-empty')"/><div class="g-hover"><span>07</span></div></div>
+      <div class="g-item reveal"                style="--d:0.18s" data-index="7"><img src="assets/photos/photo (8).jpeg" alt="Photo 8" loading="lazy" onerror="this.parentElement.classList.add('g-empty')"/><div class="g-hover"><span>08</span></div></div>
+      <div class="g-item reveal"                style="--d:0.18s" data-index="8"><img src="assets/photos/photo (9).jpeg" alt="Photo 9" loading="lazy" onerror="this.parentElement.classList.add('g-empty')"/><div class="g-hover"><span>09</span></div></div>
+      <div class="g-item reveal"                style="--d:0.18s" data-index="9"><img src="assets/photos/photo (10).jpeg" alt="Photo 10" loading="lazy" onerror="this.parentElement.classList.add('g-empty')"/><div class="g-hover"><span>10</span></div></div>
+      <div class="g-item reveal"                style="--d:0.18s" data-index="10"><img src="assets/photos/photo (11).jpeg" alt="Photo 11" loading="lazy" onerror="this.parentElement.classList.add('g-empty')"/><div class="g-hover"><span>11</span></div></div>
+      <div class="g-item reveal"                style="--d:0.18s" data-index="11"><img src="assets/photos/photo (12).jpeg" alt="Photo 12" loading="lazy" onerror="this.parentElement.classList.add('g-empty')"/><div class="g-hover"><span>12</span></div></div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
+    <button class="lb-close" id="lbClose" aria-label="Close">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <button class="lb-prev" id="lbPrev" aria-label="Previous">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <button class="lb-next" id="lbNext" aria-label="Next">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+    <div class="lb-inner">
+      <img id="lbImg" src="" alt="" />
+    </div>
+    <div class="lb-counter"><span id="lbCurrent">1</span> / <span id="lbTotal">6</span></div>
+  </div>
+
+  <!-- ===================== PRESETS ===================== -->
+  <section id="presets">
+    <div class="presets-header reveal">
+      <span class="eyebrow">Free Download</span>
+      <h2>Presets</h2>
+      <p>Drag the slider to preview the transformation.<br/>All presets are free — yours to keep.</p>
+    </div>
+
+    <div class="presets-row">
+
+      <!-- PRESET 1 -->
+      <article class="preset-card reveal" style="--d:0.05s">
+        <div class="pc-number">01</div>
+        <div class="pc-preview">
+          <!-- GANTI src -->
+          <img class="pc-before" src="assets/presets/analog-before.jpg" alt="Before" onerror="this.parentElement.classList.add('pc-empty')"/>
+          <img class="pc-after"  src="assets/presets/analog-after.jpg"  alt="After"/>
+          <div class="pc-divider"></div>
+          <div class="pc-knob">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+          <input type="range" class="pc-range" min="0" max="100" value="50" aria-label="Slider"/>
+          <span class="pc-tag pc-tag--b">Before</span>
+          <span class="pc-tag pc-tag--a">After</span>
+        </div>
+        <div class="pc-body">
+          <h3>Analog Dreamy</h3>
+          <p>Warm grain, lifted shadows, and a nostalgic film look that makes any shot feel timeless.</p>
+          <a href="https://drive.google.com/uc?export=download&id=1ck7ZP0NQo3uDvGkMzalPrIw7ihPxPC5r" class="pc-dl">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/><line x1="3" y1="19" x2="21" y2="19"/></svg>
+  Download .dng
+</a>
+        </div>
+      </article>
+
+      <!-- PRESET 2 -->
+      <article class="preset-card reveal" style="--d:0.15s">
+        <div class="pc-number">02</div>
+        <div class="pc-preview">
+          <!-- GANTI src -->
+          <img class="pc-before" src="assets/presets/fuji-before.jpg" alt="Before" onerror="this.parentElement.classList.add('pc-empty')"/>
+          <img class="pc-after"  src="assets/presets/fuji-after.jpg"  alt="After"/>
+          <div class="pc-divider"></div>
+          <div class="pc-knob">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+          </div>
+          <input type="range" class="pc-range" min="0" max="100" value="50" aria-label="Slider"/>
+          <span class="pc-tag pc-tag--b">Before</span>
+          <span class="pc-tag pc-tag--a">After</span>
+        </div>
+        <div class="pc-body">
+          <h3>Fujifilm Look</h3>
+          <p>Clean highlights, muted greens, and that signature Fuji film simulation straight from Japan.</p>
+          <a href="https://drive.google.com/uc?export=download&id=1k8YwekOoIz5jAiZHlAmURtosET3Kzlsh" class="pc-dl">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/><line x1="3" y1="19" x2="21" y2="19"/></svg>
+  Download .dng
+</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about">
+    <div class="about-wrap">
+      <div class="about-img-col reveal">
+        <div class="about-img-box">
+          <div class="about-sticker">EST.<br/>2025</div>
+          <!-- GANTI: src="assets/about.jpg" -->
+          <img src="assets/about.jpg" alt="2oosos" style="width:100%;height:100%;object-fit:cover;"/>
+          
+        </div>
+      </div>
+      <div class="about-text-col reveal" style="--d:0.1s">
+        <div class="about-eyebrow-row">
+  <span class="eyebrow">Who We Are</span>
+</div>
+        <h2>About<br/><em>2oosos</em></h2>
+        <p>
+          We are <strong>2oosos</strong> — a photography project born from the belief that every
+          frame deserves to outlive the moment it was taken. We chase quiet light,
+          raw emotion, and the beauty hiding in the ordinary.
+        </p>
+        <p>
+          Based in Indonesia, we document life as it unfolds — unposed, unfiltered,
+          and unapologetically real. Every photo we make is a letter written to the future.
+        </p>
+        <a href="https://www.instagram.com/2oosos" target="_blank" class="about-cta">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          Follow @2oosos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact">
+    <div class="contact-wrap reveal">
+      <span class="eyebrow">Get in Touch</span>
+      <h2>Let's<br/><em>Connect</em></h2>
+      <p>Just want to say hello or share something cool?<br/>Find us on Instagram — we'd love to hear from you.</p>
+      <a href="https://www.instagram.com/2oosos" target="_blank" class="contact-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        @2oosos on Instagram
+        <svg class="arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-wrap">
+      <span class="footer-logo">2oosos</span>
+      <span class="footer-copy">&copy; 2025 2oosos. All rights reserved.</span>
+      <a href="https://www.instagram.com/2oosos" target="_blank" class="footer-ig" aria-label="Instagram">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
